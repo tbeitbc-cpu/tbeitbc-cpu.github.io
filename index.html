@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUD Portfolio</title>
+    <!-- Modern Futuristic Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="scan-line"></div>
+    <div class="hud-container">
+        
+        <!-- Top Navigation -->
+        <div class="top-nav">
+            <div class="nav-item">GLOBAL SEARCH</div>
+            <div class="nav-item active">HUMAN TRACKER</div>
+            <div class="nav-item">ROBOT TRACKER</div>
+            <div class="nav-item">CYBORG TRACKER</div>
+            <div class="nav-item">WORLD MAP</div>
+        </div>
+
+        <!-- Main Body Wrapper -->
+        <div class="main-body">
+            
+            <!-- Left Sidebar -->
+            <aside class="sidebar-nav">
+                <div class="side-item"><i class="fa-solid fa-magnifying-glass"></i><span>SRC</span></div>
+                <div class="side-item"><i class="fa-solid fa-database"></i><span>DBS</span></div>
+                <div class="side-item"><i class="fa-solid fa-upload"></i><span>UPL</span></div>
+                <div class="side-item"><i class="fa-solid fa-download"></i><span>DWL</span></div>
+                <div class="side-item"><i class="fa-solid fa-network-wired"></i><span>NET</span></div>
+                <div class="side-item"><i class="fa-solid fa-print"></i><span>PRT</span></div>
+                <div class="side-item"><i class="fa-solid fa-xmark"></i><span>DEL</span></div>
+            </aside>
+
+            <!-- Grid Content -->
+            <main class="content-grid">
+                
+                <!-- Column 1: Profile & Stats -->
+                <div class="col-profile">
+                    <div class="profile-card hud-panel">
+                        <div class="profile-img-container">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?grayscale" alt="Profile" class="profile-img">
+                            <div class="img-overlay"></div>
+                        </div>
+                        <div class="profile-meta-vertical">
+                            TYPE: HUMAN<br>
+                            S248@0129#124G
+                        </div>
+                    </div>
+                    
+                    <div class="stats-panel hud-panel">
+                        <div class="stat-row">
+                            <span class="stat-label">STR</span>
+                            <div class="stat-bar-container"><div class="stat-bar" style="width: 80%"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">AGI</span>
+                            <div class="stat-bar-container"><div class="stat-bar" style="width: 65%"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">INT</span>
+                            <div class="stat-bar-container"><div class="stat-bar" style="width: 95%"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">STL</span>
+                            <div class="stat-bar-container"><div class="stat-bar" style="width: 40%"></div></div>
+                        </div>
+                    </div>
+
+                    <div class="biometric-panel hud-panel">
+                        <h3>BIOMETRIC ANALYSIS</h3>
+                        <div class="data-row"><span>Height</span><span>5'9"</span></div>
+                        <div class="data-row"><span>Weight</span><span>160 lbs</span></div>
+                        <div class="data-row"><span>Blood Type</span><span>A+</span></div>
+                        <div class="data-row"><span>Ethnic Code</span><span>WA-102</span></div>
+                    </div>
+
+                    <div class="fingerprint-panel hud-panel">
+                        <h3>FINGERPRINT-R/TMB</h3>
+                        <div class="fingerprint-scan">
+                            <i class="fa-solid fa-fingerprint"></i>
+                            <div class="scan-grid"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Main Info -->
+                <div class="col-info">
+                    <div class="header-name">
+                        <h1>Andre C. Mueller</h1>
+                        <h2 class="alert-text">STATUS: WANTED ===============</h2>
+                        <h3>TYPE: HUMAN-42//EARTH-610</h3>
+                    </div>
+
+                    <div class="info-grid">
+                        <div class="info-block">
+                            <h4>SPECIFICATIONS</h4>
+                            <div class="kv-pair"><span class="key">Bio Code</span><span class="val">1248@0129#124G</span></div>
+                            <div class="kv-pair"><span class="key">Gender</span><span class="val">Male</span></div>
+                            <div class="kv-pair"><span class="key">Species</span><span class="val">Homo Robotos 2.0</span></div>
+                            <div class="kv-pair"><span class="key">Date of Birth</span><span class="val">04/04/1989</span></div>
+                        </div>
+
+                        <div class="info-block">
+                            <h4>BALANCE</h4>
+                            <div class="kv-pair"><span class="key">Current</span><span class="val">10230 H / 10000 H</span></div>
+                            <div class="debt-box">DEBT LIMIT EXCEEDED</div>
+                        </div>
+
+                        <div class="info-block">
+                            <h4>IDENTIFICATION</h4>
+                            <div class="kv-pair"><span class="key">SSN</span><span class="val">364-59-0466</span></div>
+                            <div class="kv-pair"><span class="key">Driver's Lic</span><span class="val">8525-FL-0212</span></div>
+                        </div>
+
+                        <div class="info-block">
+                            <h4>BIOPROSTHETICS</h4>
+                            <div class="kv-pair"><span class="key">Manufacturer</span><span class="val">Prolabionic Ltd.</span></div>
+                            <div class="kv-pair"><span class="key">Total Units</span><span class="val">2</span></div>
+                        </div>
+
+                         <div class="info-block">
+                            <h4>WORK</h4>
+                            <div class="kv-pair"><span class="key">Status</span><span class="val">Full-time</span></div>
+                            <div class="kv-pair"><span class="key">Company</span><span class="val">Neo Vineyards</span></div>
+                            <div class="kv-pair"><span class="key">Occupation</span><span class="val">Netrunner</span></div>
+                        </div>
+
+                        <div class="info-block">
+                            <h4>ONLINE PROFILE</h4>
+                            <div class="kv-pair"><span class="key">Username</span><span class="val">aubree.mohr</span></div>
+                            <div class="kv-pair"><span class="key">Last Login</span><span class="val">2077-12-04</span></div>
+                            <div class="kv-pair"><span class="key">Protocol</span><span class="val">SSH-256</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3: Visual Data -->
+                <div class="col-visual">
+                    <div class="map-container hud-panel">
+                        <h3>LIVE LOCATION</h3>
+                        <div class="radar-view">
+                            <div class="radar-circle"></div>
+                            <div class="radar-line"></div>
+                            <div class="grid-overlay"></div>
+                            <div class="target-point"></div>
+                        </div>
+                        <div class="map-footer">
+                            <span>CLOSEST TRACKER BOT: FX-912</span>
+                        </div>
+                    </div>
+
+                    <div class="dna-container hud-panel">
+                        <h3>DNA PROFILING</h3>
+                        <div class="dna-details">
+                            <p>Analysis Method 1: Polymerase Chain Reaction</p>
+                            <p>Analysis Method 2: Short Tandem Repeats</p>
+                        </div>
+                        <div class="matrix-grid" id="matrixGrid">
+                            <!-- JS will populate this -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar Details -->
+                 <aside class="right-details-strip">
+                    <span>FAMILY DETAILS</span>
+                    <span>SOCIAL MEDIA</span>
+                    <span>INTERESTS</span>
+                    <span>E-FOOTPRINT TRACKER</span>
+                 </aside>
+
+            </main>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
